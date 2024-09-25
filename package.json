@@ -19,6 +19,7 @@
   "homepage": "https://github.com/KiLcRaFt/games-api_Martin_Nommiste#readme",
   "dependencies": {
     "express": "^4.21.0",
-    "swagger-ui-express": "^5.0.1"
+    "swagger-ui-express": "^5.0.1",
+    "yamljs": "^0.3.0"
   }
 }
