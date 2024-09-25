@@ -1,0 +1,23 @@
+[33mcommit f7525e71b6668cf01ee876705d3b6d6550616821[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Opilane TTHK <opilane@tthk.ee>
+Date:   Wed Sep 25 15:08:12 2024 +0300
+
+    As an app developer I want to be able to add new games [Delivers #188303263]
+
+[33mcommit c3422f86c0bbb2edc547ed1ab546e2f47f7d96d0[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Opilane TTHK <opilane@tthk.ee>
+Date:   Wed Sep 25 14:08:44 2024 +0300
+
+    As an app developer I want to get a full details of a given games to show in my app [Delivers #188303236]
+
+[33mcommit 3316a8d99ae518cc6557fbf4ffcdeb85816e7c25[m
+Author: Opilane TTHK <opilane@tthk.ee>
+Date:   Wed Sep 25 13:04:06 2024 +0300
+
+    As an app developer I want to get a list of all games to show in my app [Delivers #188303095]
+
+[33mcommit b860a2ef52dda2db1c6ffa9327f5694837de9ff3[m
+Author: Opilane TTHK <opilane@tthk.ee>
+Date:   Wed Sep 25 11:46:00 2024 +0300
+
+    Initial commit
