@@ -1,0 +1,24 @@
+{
+  "name": "games-api_martin_nommiste",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KiLcRaFt/games-api_Martin_Nommiste.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KiLcRaFt/games-api_Martin_Nommiste/issues"
+  },
+  "homepage": "https://github.com/KiLcRaFt/games-api_Martin_Nommiste#readme",
+  "dependencies": {
+    "express": "^4.21.0",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
