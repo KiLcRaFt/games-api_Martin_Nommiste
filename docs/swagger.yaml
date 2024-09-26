@@ -72,6 +72,22 @@ paths:
             operationId: id
             summary: Get atribfull details of a game
             description: Returns full details of a given id game
+        delete:
+            requestBody:
+                description: A game can be deleted by id
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/delete-game'
+            tags:
+                - delete-game
+            responses:
+                '204':
+                    description: There is no additional information to send back in the response body
+                '404':
+                    description: Game which you want to delete is not found
+            summary: Delete game by id
+            description: Can delete game by their own id
 components:
     schemas:
         error:
@@ -99,6 +115,17 @@ components:
             example:
                 name: Tetris
                 price: 0.99
+        delete-game:
+            description: ''
+            required:
+                - id
+            type: object
+            properties:
+                id:
+                    description: ''
+                    type: string
+            example:
+                id: 1
     responses:
         200_OK:
             content:
