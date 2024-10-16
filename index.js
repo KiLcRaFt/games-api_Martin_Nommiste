@@ -1,6 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path');
+const swaggerUi = require('swagger-ui-express');
+const yamljs = require('yamljs');
+const swaggerDocument = yamljs.load('./docs/swagger.yaml');
 const Game = require('./models/game'); // Импорт модели игры
 
 const app = express();
@@ -15,8 +18,11 @@ mongoose.connect(uri, {
     .then(() => console.log('Connected to MongoDB Atlas'))
     .catch((error) => console.error('Error connecting to MongoDB Atlas:', error));
 
+
 // Обслуживание статических файлов
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // Маршрут для получения списка игр
 app.get('/games', async (req, res) => {
@@ -78,6 +84,8 @@ app.delete('/games/:id', async (req, res) => {
 
 // Запуск сервера
 const port = process.env.PORT || 3000;
+
 app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
+    console.log(`Server running on http://localhost:${port}`);
+    console.log(`API documentation available at http://localhost:${port}/api-docs`); // URL for Swagger UI
 });
