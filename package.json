@@ -20,8 +20,9 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.0",
+    "mongodb": "^6.9.0",
+    "mongoose": "^8.7.0",
     "swagger-ui-express": "^5.0.1",
-    "vue": "^3.5.12",
     "yamljs": "^0.3.0"
   }
 }
